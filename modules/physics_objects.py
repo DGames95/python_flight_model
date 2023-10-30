@@ -31,14 +31,35 @@ class Body():
         self.rotational_intertia = rotational_inertia
 
 
-class FixedWingAircraft():
+class FixedWingAircraft(Body):
     """_summary_
     
     Provides class for aircraft, inherits from Body Class
     
-    attributes: lift coefficient, 
+    needs to get lift force (modularize to allow simple or complex model)
+    attributes are basically: current state, state' and state''
+    
+    attributes: (Body), lift force, control moments (tuple), 
     
     methods: __solve__:  defines interaction with the solver
     
     """
+    def __init__(self, ):
+        self.
+        
+        
+class Wing():
+    """_summary_
+    
+    
+    """
     pass
+
+
+class ControlSurface():
+    """
+    attributes: distance from COM, @setter deflection angle
+    
+    """
+    pass
+
